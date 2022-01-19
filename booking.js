@@ -1,10 +1,12 @@
 const express = require("express");
+const cors = require("cors")
 
 const app = express();
 const PORT =9000;
 
 //middleware
 app.use(express.json())
+app.use(cors())
 
 const rooms=[
     {
