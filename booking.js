@@ -72,6 +72,10 @@ const bookings=[
     // }
 ]
 
+app.get("/",(request,response)=>{
+    response.send("Welcome to booking api");
+})
+
 
 //send details of rooms from both data
 app.get("/rooms",(request,response)=>{
